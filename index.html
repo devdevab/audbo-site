@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>audbo — Read &amp; Listen</title>
+  <meta name="description" content="A calm, private book reader and offline neural audiobook player for iPhone and iPhone Duo. EPUB, PDF, and comics with zero accounts and zero tracking.">
+  <style>
+    :root { color-scheme: light dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      background: #F7F5F0;
+      color: #1A1917;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    header, main, footer { max-width: 760px; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
+    header { padding-top: 32px; display: flex; justify-content: space-between; align-items: center; }
+    .wordmark {
+      font-family: ui-serif, "New York", Georgia, serif;
+      font-size: 22px;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+      color: inherit;
+    }
+    nav a {
+      color: #6E6A63;
+      text-decoration: none;
+      font-size: 14px;
+      margin-left: 20px;
+    }
+    nav a:hover { color: inherit; }
+    .hero { padding: 72px 0 48px; }
+    .eyebrow {
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #6E6A63;
+      margin: 0 0 14px;
+    }
+    h1 {
+      font-family: ui-serif, "New York", Georgia, serif;
+      font-size: clamp(36px, 6vw, 52px);
+      font-weight: 500;
+      letter-spacing: -0.025em;
+      line-height: 1.12;
+      margin: 0 0 20px;
+    }
+    .lead {
+      font-size: 18px;
+      color: #4A4741;
+      max-width: 580px;
+      margin: 0 0 32px;
+    }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 12px; }
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 999px;
+      font-size: 15px;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    .btn-primary { background: #1A1917; color: #F7F5F0; }
+    .btn-secondary { border: 1px solid #D8D3C8; color: #1A1917; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 24px 0 56px;
+    }
+    .card {
+      background: #FFFFFF;
+      border: 1px solid #E7E2D8;
+      border-radius: 16px;
+      padding: 24px;
+    }
+    .card h2 {
+      font-family: ui-serif, "New York", Georgia, serif;
+      font-size: 20px;
+      font-weight: 500;
+      margin: 0 0 8px;
+    }
+    .card p { margin: 0; font-size: 14px; color: #545049; }
+    footer {
+      border-top: 1px solid #E7E2D8;
+      padding-top: 28px;
+      padding-bottom: 56px;
+      font-size: 13px;
+      color: #6E6A63;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    footer a { color: inherit; text-decoration: none; margin-left: 16px; }
+    footer a:hover { text-decoration: underline; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #141413; color: #ECE9E2; }
+      .eyebrow, nav a, footer { color: #9A968E; }
+      .lead { color: #C7C3BA; }
+      .btn-primary { background: #ECE9E2; color: #141413; }
+      .btn-secondary { border-color: #2E2D2A; color: #ECE9E2; }
+      .card { background: #1C1C1A; border-color: #2A2926; }
+      .card p { color: #B4B0A7; }
+      footer { border-color: #2A2926; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="wordmark" href="./">audbo</a>
+    <nav>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">iPhone &amp; iPhone Duo</p>
+      <h1>Read without noise.<br>Listen anywhere.</h1>
+      <p class="lead">audbo is a quiet, private reader and offline neural audiobook player for your own EPUBs, PDFs, and comics — crafted for deep focus with zero accounts and zero tracking.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="support.html">Get Support</a>
+        <a class="btn btn-secondary" href="privacy.html">Privacy Policy</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Fine Book Typography</h2>
+        <p>Curated serif and legible typefaces, four calibrated paper &amp; OLED Night tones, and real two-page open-book spreads on iPhone Duo.</p>
+      </article>
+      <article class="card">
+        <h2>Offline Neural Voices</h2>
+        <p>Six natural on-device voices powered by Kyutai Pocket TTS, synced sentence highlighting, sleep timer, and ambient soundscapes — even on a flight.</p>
+      </article>
+      <article class="card">
+        <h2>Built for Focus</h2>
+        <p>Slide the reading ruler line by line, highlight and export Markdown notes, and pick up effortlessly with quiet recaps of where you left off.</p>
+      </article>
+      <article class="card">
+        <h2>Privately Yours</h2>
+        <p>Import EPUB, PDF, CBZ, CBR, or CB7 from Files or Send from Mac over local Wi-Fi. No sign-ups, no cloud lock-in, no analytics.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <span>&copy; 2026 audbo</span>
+    <div>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+  </footer>
+</body>
+</html>
